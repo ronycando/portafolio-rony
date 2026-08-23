@@ -128,25 +128,30 @@ body {
 .saludo {
     color: var(--color-principal);
     font-weight: bold;
+
     margin-bottom: 10px;
 }
 
 
 .texto-inicio h2 {
     font-size: 42px;
+
     margin-bottom: 10px;
 }
 
 
 .texto-inicio h3 {
     font-size: 22px;
+
     color: var(--color-texto-suave);
+
     margin-bottom: 20px;
 }
 
 
 .texto-inicio p {
     line-height: 1.7;
+
     margin-bottom: 25px;
 }
 
@@ -164,6 +169,7 @@ body {
     padding: 12px 24px;
 
     text-decoration: none;
+
     border-radius: 6px;
 
     transition: 0.3s;
@@ -172,6 +178,7 @@ body {
 
 .boton:hover {
     transform: translateY(-3px);
+
     opacity: 0.85;
 }
 
@@ -182,12 +189,14 @@ body {
 
 .imagen-inicio {
     flex: 1;
+
     text-align: center;
 }
 
 
 .imagen-inicio img {
     width: 320px;
+
     max-width: 100%;
 
     border-radius: 20px;
@@ -200,21 +209,25 @@ body {
 
 .contenedor-seccion {
     max-width: 1100px;
+
     margin: auto;
 }
 
 
 .contenedor-seccion h2 {
     font-size: 32px;
+
     margin-bottom: 25px;
 
     text-align: center;
+
     color: var(--color-principal);
 }
 
 
 .descripcion-seccion {
     text-align: center;
+
     color: var(--color-texto-suave);
 
     margin-bottom: 35px;
@@ -229,13 +242,16 @@ body {
 
 .sobre-mi {
     padding: 70px 40px;
+
     background-color: var(--color-blanco);
 }
 
 
 .sobre-mi p {
     line-height: 1.8;
+
     margin-bottom: 15px;
+
     text-align: justify;
 }
 
@@ -246,13 +262,16 @@ body {
 
 .habilidades {
     padding: 70px 40px;
+
     background-color: var(--color-fondo);
 }
 
 
 .lista-habilidades {
     display: flex;
+
     flex-wrap: wrap;
+
     justify-content: center;
 
     gap: 20px;
@@ -276,6 +295,7 @@ body {
 
 .habilidad h3 {
     color: var(--color-principal);
+
     margin-bottom: 10px;
 }
 
@@ -298,13 +318,16 @@ body {
 
 .proyectos {
     padding: 70px 40px;
+
     background-color: var(--color-blanco);
 }
 
 
 .lista-proyectos {
     display: flex;
+
     flex-wrap: wrap;
+
     justify-content: center;
 
     gap: 25px;
@@ -335,6 +358,7 @@ body {
 
 .imagen-proyecto {
     width: 100%;
+
     height: 200px;
 
     overflow: hidden;
@@ -343,9 +367,17 @@ body {
 
 .imagen-proyecto img {
     width: 100%;
+
     height: 100%;
 
     object-fit: cover;
+
+    transition: 0.3s;
+}
+
+
+.proyecto:hover .imagen-proyecto img {
+    transform: scale(1.03);
 }
 
 
@@ -356,6 +388,7 @@ body {
 
 .contenido-proyecto h3 {
     color: var(--color-principal);
+
     margin-bottom: 12px;
 }
 
@@ -365,10 +398,14 @@ body {
 }
 
 
-/* MENSAJE DE SISTEMA PRIVADO */
+/* SISTEMAS PRIVADOS */
 
 .privado {
     margin-top: 15px;
+
+    padding-top: 12px;
+
+    border-top: 1px solid #dddddd;
 
     font-size: 14px;
 
@@ -384,6 +421,7 @@ body {
 
 .contacto {
     padding: 70px 40px;
+
     background-color: var(--color-fondo);
 }
 
@@ -430,6 +468,8 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 
     font-size: 16px;
+
+    transition: 0.3s;
 }
 
 
@@ -438,6 +478,8 @@ body {
     outline: none;
 
     border-color: var(--color-principal);
+
+    box-shadow: 0 0 0 2px rgba(13, 110, 253, 0.1);
 }
 
 
@@ -477,37 +519,61 @@ body {
    PIE DE PÁGINA
 ========================================= */
 
-footer {
+.pie-pagina {
     background-color: var(--color-secundario);
 
     color: var(--color-blanco);
 
-    padding: 20px;
+    padding: 25px;
 
     text-align: center;
 }
 
 
+.pie-pagina p {
+    margin: 5px 0;
+}
+
+
+.pie-pagina a {
+    color: var(--color-principal);
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.pie-pagina a:hover {
+    color: var(--color-blanco);
+}
+
+
 /* =========================================
-   DISEÑO RESPONSIVE
+   DISEÑO RESPONSIVE - TABLET
 ========================================= */
 
 @media (max-width: 800px) {
 
     .contenedor-header {
         flex-direction: column;
+
         text-align: center;
     }
 
 
     .navegacion {
         flex-wrap: wrap;
+
         justify-content: center;
     }
 
 
     .contenido-inicio {
         flex-direction: column;
+
         text-align: center;
     }
 
@@ -529,11 +595,16 @@ footer {
 
     .proyecto {
         width: 100%;
+
         max-width: 350px;
     }
 
 }
 
+
+/* =========================================
+   DISEÑO RESPONSIVE - CELULAR
+========================================= */
 
 @media (max-width: 500px) {
 
@@ -563,6 +634,11 @@ footer {
 
     .formulario-contacto {
         padding: 25px 20px;
+    }
+
+
+    .navegacion {
+        gap: 12px;
     }
 
 }
