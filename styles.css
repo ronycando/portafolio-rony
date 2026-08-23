@@ -1,4 +1,6 @@
-/* VARIABLES CSS */
+/* =========================================
+   VARIABLES CSS
+========================================= */
 
 :root {
     --color-principal: #0d6efd;
@@ -9,7 +11,9 @@
 }
 
 
-/* CONFIGURACIÓN GENERAL */
+/* =========================================
+   CONFIGURACIÓN GENERAL
+========================================= */
 
 * {
     margin: 0;
@@ -17,9 +21,11 @@
     box-sizing: border-box;
 }
 
+
 html {
     scroll-behavior: smooth;
 }
+
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -28,13 +34,16 @@ body {
 }
 
 
-/* ENCABEZADO */
+/* =========================================
+   ENCABEZADO
+========================================= */
 
 .encabezado {
     background-color: var(--color-secundario);
     color: var(--color-blanco);
     padding: 20px 40px;
 }
+
 
 .contenedor-header {
     max-width: 1200px;
@@ -47,9 +56,11 @@ body {
     gap: 30px;
 }
 
+
 .logo h1 {
     font-size: 24px;
 }
+
 
 .logo p {
     margin-top: 5px;
@@ -57,12 +68,15 @@ body {
 }
 
 
-/* NAVEGACIÓN */
+/* =========================================
+   NAVEGACIÓN
+========================================= */
 
 .navegacion {
     display: flex;
     gap: 20px;
 }
+
 
 .navegacion a {
     color: var(--color-blanco);
@@ -72,12 +86,15 @@ body {
     transition: 0.3s;
 }
 
+
 .navegacion a:hover {
     color: var(--color-principal);
 }
 
 
-/* SECCIÓN INICIO */
+/* =========================================
+   SECCIÓN INICIO
+========================================= */
 
 .inicio {
     min-height: 80vh;
@@ -88,9 +105,11 @@ body {
     padding: 60px 40px;
 }
 
+
 .contenido-inicio {
     max-width: 1100px;
     width: 100%;
+
     margin: auto;
 
     display: flex;
@@ -100,9 +119,11 @@ body {
     gap: 50px;
 }
 
+
 .texto-inicio {
     flex: 1;
 }
+
 
 .saludo {
     color: var(--color-principal);
@@ -110,10 +131,12 @@ body {
     margin-bottom: 10px;
 }
 
+
 .texto-inicio h2 {
     font-size: 42px;
     margin-bottom: 10px;
 }
+
 
 .texto-inicio h3 {
     font-size: 22px;
@@ -121,13 +144,16 @@ body {
     margin-bottom: 20px;
 }
 
+
 .texto-inicio p {
     line-height: 1.7;
     margin-bottom: 25px;
 }
 
 
-/* BOTÓN */
+/* =========================================
+   BOTÓN PRINCIPAL
+========================================= */
 
 .boton {
     display: inline-block;
@@ -143,18 +169,22 @@ body {
     transition: 0.3s;
 }
 
+
 .boton:hover {
     transform: translateY(-3px);
     opacity: 0.85;
 }
 
 
-/* IMAGEN PRINCIPAL */
+/* =========================================
+   IMAGEN PRINCIPAL
+========================================= */
 
 .imagen-inicio {
     flex: 1;
     text-align: center;
 }
+
 
 .imagen-inicio img {
     width: 320px;
@@ -164,12 +194,15 @@ body {
 }
 
 
-/* SECCIONES GENERALES */
+/* =========================================
+   SECCIONES GENERALES
+========================================= */
 
 .contenedor-seccion {
     max-width: 1100px;
     margin: auto;
 }
+
 
 .contenedor-seccion h2 {
     font-size: 32px;
@@ -180,29 +213,42 @@ body {
 }
 
 
-/* SOBRE MÍ */
+.descripcion-seccion {
+    text-align: center;
+    color: var(--color-texto-suave);
+
+    margin-bottom: 35px;
+
+    line-height: 1.6;
+}
+
+
+/* =========================================
+   SOBRE MÍ
+========================================= */
 
 .sobre-mi {
     padding: 70px 40px;
-
     background-color: var(--color-blanco);
 }
+
 
 .sobre-mi p {
     line-height: 1.8;
     margin-bottom: 15px;
-
     text-align: justify;
 }
 
 
-/* HABILIDADES */
+/* =========================================
+   HABILIDADES
+========================================= */
 
 .habilidades {
     padding: 70px 40px;
-
     background-color: var(--color-fondo);
 }
+
 
 .lista-habilidades {
     display: flex;
@@ -211,6 +257,7 @@ body {
 
     gap: 20px;
 }
+
 
 .habilidad {
     width: 300px;
@@ -226,15 +273,17 @@ body {
     transition: 0.3s;
 }
 
+
 .habilidad h3 {
     color: var(--color-principal);
-
     margin-bottom: 10px;
 }
+
 
 .habilidad p {
     line-height: 1.5;
 }
+
 
 .habilidad:hover {
     transform: translateY(-5px);
@@ -243,10 +292,194 @@ body {
 }
 
 
-/* PIE DE PÁGINA */
+/* =========================================
+   PROYECTOS
+========================================= */
+
+.proyectos {
+    padding: 70px 40px;
+    background-color: var(--color-blanco);
+}
+
+
+.lista-proyectos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    gap: 25px;
+}
+
+
+.proyecto {
+    width: 330px;
+
+    background-color: var(--color-fondo);
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+
+.proyecto:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+.imagen-proyecto {
+    width: 100%;
+    height: 200px;
+
+    overflow: hidden;
+}
+
+
+.imagen-proyecto img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+
+.contenido-proyecto {
+    padding: 20px;
+}
+
+
+.contenido-proyecto h3 {
+    color: var(--color-principal);
+    margin-bottom: 12px;
+}
+
+
+.contenido-proyecto p {
+    line-height: 1.6;
+}
+
+
+/* MENSAJE DE SISTEMA PRIVADO */
+
+.privado {
+    margin-top: 15px;
+
+    font-size: 14px;
+
+    color: var(--color-texto-suave);
+
+    font-style: italic;
+}
+
+
+/* =========================================
+   CONTACTO
+========================================= */
+
+.contacto {
+    padding: 70px 40px;
+    background-color: var(--color-fondo);
+}
+
+
+.formulario-contacto {
+    max-width: 650px;
+
+    margin: auto;
+
+    background-color: var(--color-blanco);
+
+    padding: 35px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+.campo {
+    margin-bottom: 20px;
+}
+
+
+.campo label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-weight: bold;
+}
+
+
+.campo input,
+.campo textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #cccccc;
+
+    border-radius: 6px;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 16px;
+}
+
+
+.campo input:focus,
+.campo textarea:focus {
+    outline: none;
+
+    border-color: var(--color-principal);
+}
+
+
+/* =========================================
+   BOTÓN DEL FORMULARIO
+========================================= */
+
+.boton-enviar {
+    background-color: var(--color-principal);
+
+    color: var(--color-blanco);
+
+    border: none;
+
+    padding: 13px 25px;
+
+    border-radius: 6px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.boton-enviar:hover {
+    opacity: 0.85;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================
+   PIE DE PÁGINA
+========================================= */
 
 footer {
     background-color: var(--color-secundario);
+
     color: var(--color-blanco);
 
     padding: 20px;
@@ -255,7 +488,9 @@ footer {
 }
 
 
-/* DISEÑO RESPONSIVE */
+/* =========================================
+   DISEÑO RESPONSIVE
+========================================= */
 
 @media (max-width: 800px) {
 
@@ -264,22 +499,70 @@ footer {
         text-align: center;
     }
 
+
     .navegacion {
         flex-wrap: wrap;
         justify-content: center;
     }
+
 
     .contenido-inicio {
         flex-direction: column;
         text-align: center;
     }
 
+
     .texto-inicio h2 {
         font-size: 32px;
     }
 
+
     .imagen-inicio img {
         width: 250px;
+    }
+
+
+    .sobre-mi p {
+        text-align: left;
+    }
+
+
+    .proyecto {
+        width: 100%;
+        max-width: 350px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .encabezado {
+        padding: 20px;
+    }
+
+
+    .inicio,
+    .sobre-mi,
+    .habilidades,
+    .proyectos,
+    .contacto {
+        padding: 50px 20px;
+    }
+
+
+    .texto-inicio h2 {
+        font-size: 28px;
+    }
+
+
+    .texto-inicio h3 {
+        font-size: 19px;
+    }
+
+
+    .formulario-contacto {
+        padding: 25px 20px;
     }
 
 }
